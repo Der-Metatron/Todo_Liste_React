@@ -1,5 +1,15 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: azure;
+}
 .App {
   text-align: center;
+  text-shadow: 2px 2px #ff0000;
+  color: azure;
+}
+.App1 {
+  text-shadow: 2px 2px #0e7fe9;
+  color: rgb(255, 255, 255);
 }
 
 .App-header {
@@ -16,6 +26,7 @@
 .App-link {
   color: #61dafb;
 }
-.h1 {
-  text-align: center;
+h1 {
+  text-decoration: underline;
+  font-size: 4rem;
 }
