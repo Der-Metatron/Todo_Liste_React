@@ -2,19 +2,23 @@ import React from "react";
 import "./App.css";
 
 function Todo({ todo, index, completeTodo, removeTodo }) {
+  /* Funktion die zurückgegeben wird */
   return (
     <div
       className="App1"
       style={{
         textDecoration: todo.isCompleted ? "line-through" : "",
-        textDecorationColor: todo.isCompleted ? "red" : "",
+        textDecorationColor: todo.isCompleted
+          ? "red"
+          : "" /* Durchgestrichener Farbiger Balken */,
       }}
     >
       <h2>Ich muss noch :</h2>
       {todo.text}
       <div>
         <br></br>
-        <button onClick={() => completeTodo(index)}>Abgeschlossen</button>
+        <button onClick={() => completeTodo(index)}>Abgeschlossen</button>{" "}
+        {/* Button mit funktion */}
         <button onClick={() => removeTodo(index)}>x</button>
       </div>
     </div>
